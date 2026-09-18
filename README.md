@@ -116,24 +116,3 @@ This will:
 2. Split it into train/test sets
 3. Train and tune all three models
 4. Print a comparison table of MSE, RMSE, MAE, and R² for each model
-5. Report the best-performing model
-
-## Configuration
-
-All paths, split settings, and feature lists are centralized in `src/config.yaml`:
-
-```yaml
-data_path: "data/data.csv"
-target: "final_test"
-test_size: 0.2
-random_state: 42
-numerical_features: [...]
-categorical_features: [...]
-```
-
-Update this file to change the dataset location or feature set without modifying code.
-
-## Notes / Assumptions
-
-- "Linear Regression" and "Multivariate Regression" use the same underlying algorithm (Ordinary Least Squares); they differ only in the number of predictors used (one vs. all).
-- Model choice and hyperparameter ranges are based on syllabus content (Simple Linear Regression, Multivariate Linear Regression, Ridge Regression); Lasso Regression was covered in the same chapter but not included per project scope.
