@@ -1,0 +1,24 @@
+data_path: "data/regression_bonus_practice_data.csv"
+
+target: "final_test"
+
+test_size: 0.2
+random_state: 42
+
+numerical_features:
+  - number_of_siblings
+  - n_male
+  - n_female
+  - age
+  - hours_per_week
+  - attendance_rate
+
+categorical_features:
+  - direct_admission
+  - CCA
+  - learning_style
+  - gender
+  - tuition
+  - sleep_time
+  - wake_time
+  - mode_of_transport
