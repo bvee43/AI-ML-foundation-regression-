@@ -87,8 +87,6 @@ Per the course syllabus (Chapter 4: Model Development), three regression models 
 - **MAE** (Mean Absolute Error)
 - **R²** (Coefficient of Determination)
 
-The model with the lowest RMSE on the held-out test set is selected as the best model.
-
 ## Setup
 
 1. Clone the repository and navigate to the project root.
